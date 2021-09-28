@@ -6,13 +6,15 @@ $thirdValue = $_POST['thirdValue'];
 $triangle = false;
 $message = "";
 
-if ($firstValue + $secondValue > $thirdValue 
-    || $secondValue + $thirdValue > $firstValue 
-    || $thirdValue + $firstValue > $secondValue
-) {
-    $triangle = true;
-    $message = "É um triângulo!";
-    $type = "";
+if ($firstValue > 0 && $secondValue > 0 && $thirdValue > 0) {
+    if ($firstValue + $secondValue > $thirdValue 
+        || $secondValue + $thirdValue > $firstValue 
+        || $thirdValue + $firstValue > $secondValue
+    ) {
+        $triangle = true;
+        $message = "É um triângulo!";
+        $type = "";
+    }
 } else {
     $message = "Não é um triângulo!";
 }
