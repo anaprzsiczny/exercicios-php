@@ -5,28 +5,36 @@
  * 
  * @param int $numero
  * 
- * @return string
+ * @return void
  */
-function diaDaSemana($numero) : string
+function diaDaSemana($numero)
 {
-    if ($numero === 1) {
-        return "1-Domingo";
-    } elseif ($numero === 2) {
-        return "2-Segunda";
-    } elseif ($numero === 3) {
-        return "3-Terça";
-    } elseif ($numero === 4) {
-        return "4-Quarta";
-    } elseif ($numero === 5) {
-        return "5-Quinta";
-    } elseif ($numero === 6) {
-        return "6-Sexta";
-    } elseif ($numero === 7) {
-        return "7-Sábado";
-    } else {
-        return "Valor inválido!";
+    switch ($numero) {
+    case 1:
+        echo "1 - Domingo";
+        break;
+    case 2:
+        echo "2 - Segunda";
+        break;
+    case 3:
+        echo "3 - Terça";
+        break;
+    case 4:
+        echo "4 - Quarta";
+        break;
+    case 5:
+        echo "5 - Quinta";
+        break;
+    case 6:
+        echo "6 - Sexta";
+        break;
+    case 7:
+        echo "7 - Sábado";
+        break;
+    default:
+        echo "Valor inválido";
     }
 }
 
-echo diaDaSemana(1);
+diaDaSemana(7);
 ?>
