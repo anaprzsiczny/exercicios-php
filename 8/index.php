@@ -16,6 +16,8 @@ $longBook = new Book("Anna Kariênina", "Liev Tolstoi", 950, $otherPerson->getNa
 
 $longBook->browseBook(543);
 $boringBook->openBook();
+$longBook->nextPage();
+$otherPerson->birthday();
 
 $coolBookDetails = $coolBook->getBookDetails();
 $boringBookDetails = $boringBook->getBookDetails();
